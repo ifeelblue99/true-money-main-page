@@ -1,0 +1,145 @@
+:root{
+    --main-color: #cd292f;
+    --y-color: #ff9448;
+}
+
+*{
+    line-height: 1.2;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    border: none;
+    /* border: .2px black solid; */
+}
+header{
+    color: white;
+    padding: 1.5rem;
+    background-color: #cd292e;
+    top: 0;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header h3 span{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+nav span{
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0 .3rem;
+}
+header h2{
+    font-weight: normal;
+}
+#phone-num{
+    cursor: pointer;
+    border-radius: 50px;
+    padding: .3rem .6rem;
+    background-color: white;
+    color: #CD292F;
+}
+
+/*hero*/
+.hero{
+    padding: 2rem;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    background-color: #CD292F; 
+}
+.sec-1{
+    gap: 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+#p-info-1{
+    cursor: pointer;
+    color: var(--y-color);
+}
+#p-info-2{
+    max-width: 35ch;
+}
+#p-info-2, #p-info-3{
+    color: white;
+}
+#p-info-3 a{
+    color: var(--y-color);
+}
+#hero-title{
+    color: white;
+    font-size: 3rem;
+    max-width: 15ch;
+}
+#hero-map-search{   
+    color: white;
+    background-color: var(--y-color);
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.inputs{
+    margin-top: .4rem;
+    align-items: stretch;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
+    display: flex;
+}
+.inputs input{
+    outline: none;
+    padding: .3rem;
+    border-radius: 15px;
+}
+.inputs button{
+    padding: .3rem;
+    border: .5px white solid;
+    border-radius: 51px;
+    cursor: pointer;   
+}
+/*section 2*/
+
+/*card*/
+.card{
+
+    transform: rotateZ(-15deg);
+    border-radius: 15px;
+    padding: 1rem;
+    border: 3px rgba(255, 255, 255, 0.308) solid;
+    font-size: 2rem;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.205);
+}
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+}
+.card-num{
+    padding: 1rem;
+}
+.card-sub-info{
+    display: flex;
+    justify-content: space-between;
+}
+.card::after{
+    top: -55px;
+    content: "";
+    height: 450px;
+    z-index: -10;
+    width: 450px;
+    border-radius: 50%;
+    background-image: linear-gradient(
+        90deg,
+        #ff9448a6,
+        #fff2e9a6
+    );
+    position: absolute;
+    display: block;
+}
